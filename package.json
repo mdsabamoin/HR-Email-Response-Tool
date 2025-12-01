@@ -1,0 +1,28 @@
+{
+  "name": "hr-email-response-tool",
+  "version": "1.0.0",
+  "description": "Build a Simple HR Candidate Email Response Tool",
+  "main": "emailTemplates.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdsabamoin/HR-Email-Response-Tool.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mdsabamoin/HR-Email-Response-Tool/issues"
+  },
+  "homepage": "https://github.com/mdsabamoin/HR-Email-Response-Tool#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.11"
+  }
+}

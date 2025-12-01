@@ -12,7 +12,8 @@ app.use(cors());
 
 // I am Serving frontend here
 app.use(express.static(path.join(__dirname, "public")));
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5000;
+
 // this I am using to replace the placeholders mentioned in emailTemplates file
 function fillTemplate(template, name, position) {
   return template

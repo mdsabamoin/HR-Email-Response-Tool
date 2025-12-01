@@ -20,7 +20,9 @@ function fillTemplate(template, name, position) {
     .replace("[Candidate Name]", name)
     .replace("[Position]", position);
 }
-
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 app.post("/preview", (req, res) => {
   const { status, name, position } = req.body;
   const template =
@@ -58,4 +60,4 @@ app.post("/send-email", async (req, res) => {
   }
 });
 
-app.listen(port, () => console.log("Server running on http://localhost:5000"));
+app.listen(port, () => console.log(`Server running on ${port}`));
